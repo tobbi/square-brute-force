@@ -21,7 +21,7 @@ while not found:
     res_array = []
     for x in range(9):
         num = random.randint(lower, upper)
-        while num in res_array:
+        while (num * num) in res_array:
             num = random.randint(lower, upper)
         res_array.append(num * num)
     pprint(res_array, width=80)
